@@ -1,8 +1,40 @@
 @import "../../styles.scss";
 
-
-.bg{ 
+.container{ 
     background-color:$color1;
-    color:$font-color-white;
     display: flex;
+    place-items: center;
+}
+
+.block-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 6rem;
+    margin-right: 2rem;
+}
+
+.title{
+    font-family: 'modernist-bold';
+    color:$font-color-white;
+    font-size: 78px;
+    padding-bottom: 20px ;
+
+}
+
+.abonnement{
+    font-family :'modernist-regular';
+    color : $font-color-gray ;
+    font-size: 35px;
+    padding-bottom: 20px ;
+}
+.lien{
+    font-family :'modernist-regular';
+    color:  $font-color-white;
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+img{
+    margin-right: 3rem;
+    padding-top: 7rem;
 }

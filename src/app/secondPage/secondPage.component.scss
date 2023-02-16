@@ -1,0 +1,81 @@
+@import "../../styles.scss";
+
+.container{
+    justify-content: center;
+    margin: 10rem 0;
+}
+.block-title{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.title{
+    font-family: 'modernist-bold';
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.text{
+    font-family: 'modernist-regular';
+    font-size: 24px;
+    color : $color3 ;
+}
+.block-abonnement{
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+.MensuelVie{
+background-color: aqua;
+width: 393px;
+height: 476px;
+border-radius: 5px;
+}
+.Annuel{
+background-color: red;
+width: 394px;
+height: 536px;
+border-radius: 5px;
+margin: 0 1rem;
+}
+
+.block-formules{
+display: flex ;
+margin: 10rem 10rem;
+}
+
+.fonctionnalités{
+font-family: 'modernist-bold';
+font-size: 48px;
+}
+.block-résumé{
+    columns: 2;
+}
+.résumé {
+ font-family: 'modernist-regular';
+ font-size: 20px;
+ color: $color3;
+ margin-top: 1rem;
+}
+.bold{
+font-family: 'modernist-bold';
+font-size: 20px;
+color: $font-color-black;
+}
+.check{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: $color2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block-check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+

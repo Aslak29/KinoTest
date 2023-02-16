@@ -92,7 +92,8 @@
               "browserTarget": "ng-kinomap-test:build:production"
             },
             "development": {
-              "browserTarget": "ng-kinomap-test:build:development"
+              "browserTarget": "ng-kinomap-test:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"

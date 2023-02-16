@@ -7,6 +7,7 @@ import { FirstPageComponent } from './firstPage/firstPage.component';
 import { SecondPageComponent } from './secondPage/secondPage.component';
 import { ThirdPageComponent } from './thirdPage/thirdPage.component';
 import { FourPageComponent } from './fourPage/fourPage.component';
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -14,11 +15,12 @@ import { FourPageComponent } from './fourPage/fourPage.component';
     FirstPageComponent,
     SecondPageComponent,
     ThirdPageComponent,
-    FourPageComponent
+    FourPageComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

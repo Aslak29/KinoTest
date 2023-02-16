@@ -2,7 +2,7 @@ import { Component} from "@angular/core";
 
 
 @Component({
-    selector: 'app-third-page',
+    selector: 'app-four-page',
     templateUrl: './fourPage.component.html',
     styleUrls: ['./fourPage.component.scss']
   })
