@@ -7,6 +7,7 @@ import { FirstPageComponent } from './firstPage/firstPage.component';
 import { SecondPageComponent } from './secondPage/secondPage.component';
 import { ThirdPageComponent } from './thirdPage/thirdPage.component';
 import { FourPageComponent } from './fourPage/fourPage.component';
+import { FivePageComponent } from './fivePage/fivePage.component';
 import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
@@ -16,6 +17,7 @@ import {HttpClientModule} from '@angular/common/http'
     SecondPageComponent,
     ThirdPageComponent,
     FourPageComponent,
+    FivePageComponent
   ],
   imports: [
     BrowserModule,

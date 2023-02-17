@@ -1,0 +1,137 @@
+@import "../../styles.scss";
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 10rem 0;
+}
+.image{
+    background-image: linear-gradient(-85deg, #212529 0%, rgba(33, 37, 41, 0.9) 15.98%, rgba(33, 37, 41, 0.1) 100%),
+    linear-gradient(0deg, #212529 0%, rgba(33, 37, 41, 0) 15%),url("../../assets/images/image2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 54rem;
+    width: 100%;
+    position: relative;
+    margin-bottom: 288px;
+}
+.block-text{
+    display: flex;
+    text-align: end;
+    flex-direction: column;
+    padding-right: 5rem;;
+}
+.title{
+    color: $font-color-white;
+    font-size: 70px;
+    font-family: modernist-bold;
+}
+.color-text{
+    color: $color2;
+    font-size: 70px;
+    font-family: modernist-bold;
+}
+.description{
+    color: $font-color-gray;
+    font-size: 20px;
+    font-family: modernist-regular;
+}
+.block-yellow{
+    position: absolute;
+    background-color: $color2;
+    margin: 0 2%;
+    height: 310px;
+    width: 96%;
+    bottom: 0;
+    transform: translateY(75%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3rem;
+}
+.block-gratuit{
+    display: flex;
+    margin: auto;
+    width: 70%;
+    gap: 0 50px;
+    align-items:center;
+}
+.bold{
+    color: $color1;
+    font-size: 50px;
+    font-family: modernist-bold;
+}
+.text-bold{
+    color: $color1;
+    font-size: 25px;
+    font-family: modernist-bold;
+}
+.text-grey{
+    color: $font-color-black;
+    font-size: 22px;
+    font-family: modernist-regular;
+}
+.block-info{
+    display: flex;
+    gap: 0 5%;
+}
+.half-circle{
+    position: relative;
+    height: 80px;
+    min-width: 80px;
+    border-radius: 50%;
+    border-top: 4px solid $font-color-white;
+    border-right: 4px solid $font-color-white;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+    border-left :4px solid rgba(255, 255, 255, 0.5);
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.half-circle > svg{
+    transform: rotate(-45deg);
+}
+.circle{
+    position: relative;
+    height: 80px;
+    min-width: 80px;
+    border-radius: 50%;
+    border: 4px solid $font-color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.step-circle1{
+    position: absolute;
+    height: 35px;
+    min-width: 35px;
+    border-radius: 50%;
+    border: 4px solid $color2;
+    background-color: $color1;
+    top: 0;
+    right: 50%;
+    transform: translate(50%,-50%) rotate(-45deg);
+    color: $font-color-white;
+    font-family: modernist-bold;
+    text-align: center;
+    font-size: 25px;
+    line-height: 35px;
+}
+.step-circle2{
+    position: absolute;
+    height: 35px;
+    min-width: 35px;
+    border-radius: 50%;
+    border: 4px solid $color2;
+    background-color: $color1;
+    right: 0;
+    top: 0;
+    transform: translate(25%,-25%);
+    color: $font-color-white;
+    font-family: modernist-bold;
+    text-align: center;
+    font-size: 25px;
+    line-height: 35px;
+}

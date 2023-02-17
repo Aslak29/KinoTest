@@ -89,7 +89,8 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ng-kinomap-test:build:production"
+              "browserTarget": "ng-kinomap-test:build:production",
+              "proxyConfig": "src/proxy.conf.json"
             },
             "development": {
               "browserTarget": "ng-kinomap-test:build:development",
