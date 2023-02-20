@@ -15,12 +15,12 @@
     width: 100%;
     position: relative;
     margin-bottom: 288px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 .block-text{
-    display: flex;
-    text-align: end;
-    flex-direction: column;
-    padding-right: 5rem;;
+    padding-right: 15rem;
 }
 .title{
     color: $font-color-white;
@@ -36,6 +36,19 @@
     color: $font-color-gray;
     font-size: 20px;
     font-family: modernist-regular;
+}
+.block-etoile{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 15rem;
+}
+.note{
+    color: $font-color-white;
+    font-size: 25px;
+    font-family: modernist-bold;
+    margin: 20px;
 }
 .block-yellow{
     position: absolute;

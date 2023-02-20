@@ -1,5 +1,7 @@
 import { Component} from "@angular/core";
 
+type score =  number ;
+type freePeriod = number;
 
 @Component({
     selector: 'app-third-page',

@@ -40,6 +40,9 @@
     height: 476px;
     border-radius: 5px;
     box-shadow: 0px 40px 20px -19px rgb(204, 226, 255, 036) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .Annuel{
     background-color:$font-color-white;  
@@ -49,7 +52,79 @@
     border-radius: 5px;
     margin: 0 1rem;
     box-shadow: 0px 40px 20px -19px rgb(204, 226, 255, 036) ;
-    border: 4px solid $color2
+    border: 4px solid $color2;
+    display: flex;
+    align-items: center;
+}
+.title-bold{
+    font-size: 30px;
+    font-family: modernist-bold;
+    color: $color1;
+    margin-left: 25px;
+    margin-bottom: 30px;
+}
+.text-apartir{
+    font-size: 13px;
+    font-family: modernist-regular;
+    color: $color3;
+    margin-left: 25px;
+}
+.chiffre{
+    font-size: 50px;
+    font-family: modernist-bold;
+    color: $color-blue ;
+    margin-left: 25px;
+}
+.chiffre-yellow{
+    font-size: 50px;
+    font-family: modernist-bold;
+    color: $color2;
+    margin-left: 25px;
+}
+.temps{
+    font-family: modernist-regular;
+    font-size: 20px;
+    color: $color3;
+}
+.option{
+    font-family: modernist-regular;
+    font-size: 16px;
+    color: $color3;
+    margin-left: 25px;
+    margin-bottom: 30px;
+}
+.svg-text{
+    display: flex;
+    margin-left: 20px;
+}
+.utilisateur{
+    font-family: modernist-bold;
+    font-size: 16px;
+    color: $color1;
+}
+.button-blue{
+    border-radius: 5px;
+    border: 2px solid $color-blue;
+    background-color: $bg-color;
+    color:$color-blue;
+    font-family: modernist-regular;
+    width: 12rem;
+    height: 40px;
+    margin-left: 25%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.button-yellow{
+    border-radius: 5px;
+    border: 4px solid $color2;
+    background-color: $color2;
+    color: $color1;
+    font-family: modernist-bold;
+    width: 12rem;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 35%;
+    cursor: pointer;
 }
 .bandeau{
     top: 0;

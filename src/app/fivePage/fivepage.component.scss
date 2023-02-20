@@ -29,11 +29,15 @@
     padding: 15px 60px 15px 60px;
     border-radius: 10px;
     margin-bottom: 25px;
+    border: 4px solid $color2;
+    font-family: modernist-bold;
+    color: $color1;
     cursor: pointer;
 }
 .block-svg{
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 .lien{
     font-family: modernist-regular;

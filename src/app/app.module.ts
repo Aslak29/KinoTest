@@ -8,7 +8,7 @@ import { SecondPageComponent } from './secondPage/secondPage.component';
 import { ThirdPageComponent } from './thirdPage/thirdPage.component';
 import { FourPageComponent } from './fourPage/fourPage.component';
 import { FivePageComponent } from './fivePage/fivePage.component';
-import {HttpClientModule} from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [

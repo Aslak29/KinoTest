@@ -1,0 +1,37 @@
+<div class="container">
+  <section class="block-text">
+    <p class="title">Vos questions les plus<br />fréquentes</p>
+    <p class="description">
+      Get ready, start your indoor training and explore the world from home on
+      Kinomap!
+    </p>
+  </section>
+  <section class="faq">
+    <div
+      class="menu"
+      *ngFor="let faq of tabfaq; let indexOfelement = index"
+      [attr.data-index]="indexOfelement"
+    >
+      <button class="button" (click)="OneClickButton(indexOfelement)">
+        <span>{{ faq.title }}</span>
+        <div class="circle">
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.27297 0.751007V6.08101H13.33V8.46001H8.27297V13.816H5.67297V8.46001H0.641968V6.08101H5.67297V0.751007H8.27297Z"
+              fill="#1A1918"
+            />
+          </svg>
+        </div>
+      </button>
+      <div [id]="'toDisplay' + indexOfelement"class="reponse" style="display: none">
+        <p>{{ faq.details }}</p>
+      </div>
+    </div>
+  </section>
+</div>
