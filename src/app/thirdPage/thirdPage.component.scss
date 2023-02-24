@@ -44,6 +44,14 @@
     gap: 10px;
     padding-bottom: 15rem;
 }
+.full-stars{
+    display: inline-block;
+    margin-right: 5px ;
+}
+.empty-stars{
+    display: inline-block;
+    margin-right: 5px ;
+}
 .note{
     color: $font-color-white;
     font-size: 25px;

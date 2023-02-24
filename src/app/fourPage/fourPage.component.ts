@@ -1,16 +1,32 @@
 import { Component, OnInit } from "@angular/core";
+import { APIService } from "../apiservice.service";
 
-type tabFaq = Array<{
+interface faq {
   title: string;
   details: string;
-}>;
+}
 
 @Component({
   selector: "app-four-page",
   templateUrl: "./fourPage.component.html",
   styleUrls: ["./fourPage.component.scss"],
 })
-export class FourPageComponent {
+export class FourPageComponent implements OnInit {
+  
+  tabFaq: faq[] = [];
+
+  constructor(private APIService: APIService) {}
+
+  ngOnInit() {
+    this.getFaq();
+  }
+
+  public getFaq() {
+    this.APIService.getFaq().subscribe((data) => {
+      this.tabFaq = data;
+      return data;
+    });
+  }
 
   OneClickButton(index: any) {
     const element = document.getElementById(`toDisplay${index}`);
@@ -19,29 +35,4 @@ export class FourPageComponent {
         ? (element.style.display = "block")
         : (element.style.display = "none"));
   }
-
-  tabfaq: tabFaq = [
-    {
-      title: "Comment connecter mon équipement pour la première fois ?",
-      details: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-    },
-    {
-      title: "Comment ajouter un capteur additionnel ?",
-      details: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-    },
-    {
-      title: "Comment profiter d'un affichage externe ?",
-      details: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-    },
-    {
-      title: "Puis-je résillier mon abonnement à tout moment ?",
-      details: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-    },
-    {
-      title: "Quels sont les modes de paiment proposés ?",
-      details: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-    },
-  ];
-  constructor() {}
-  ngOnInit() {}
 }
